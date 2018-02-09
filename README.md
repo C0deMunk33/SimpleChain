@@ -11,5 +11,7 @@
 
 #### To run: 
 ```node simpleChainRPCServer.js```
+```node simpleChainRPCCreateObjectClient.js```
+```node simpleChainRPCServer.js```
 
-
+###### More Soon™
