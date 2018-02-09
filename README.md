@@ -1,3 +1,5 @@
+#Simple Chain
+
 ##White Paper:
 https://docs.google.com/document/d/1sSb1vSOc48fcQRb4b_yjBQZoJsKa4LJNy5mxdgywz5o/edit?usp=sharing
 
