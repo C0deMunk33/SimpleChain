@@ -1,0 +1,8 @@
+1. Auditor requests random block from official block explorer
+2. Block explorer replies with:
+	Block contents
+	Full merkle chain from prev snapshot to current snapshot
+3. Auditor hashes block and verifies the chain presented
+4. Auditor checks both on-chain snapshots against presented snapshots
+-IF FAIL: send msg to server freaking out
+-IF PASS: send msg to server approving the audit
