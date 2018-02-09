@@ -3,7 +3,7 @@ import SimpleChainRPCServer from './simpleChainRPCServer';
 import SimpleChainRPCClient from './simpleChainRPCClient';
 
 export {
-   SimpleChain,
-   SimpleChainRPCServer,
-   SimpleChainRPCClient
+  SimpleChain,
+  SimpleChainRPCServer,
+  SimpleChainRPCClient,
 };

@@ -4,10 +4,10 @@ import assert from 'assert';
 import { SimpleChain } from '../index';
 
 describe('Running simplechain tests', () => {
-  it('should return 200', done => {
-    http.get('http://127.0.0.1:1337', res => {
+  it('should return 200', (done) => {
+    http.get('http://127.0.0.1:1337', (res) => {
       assert.equal(200, res.statusCode);
-      done();
+      done(SimpleChain);
     });
   });
 });

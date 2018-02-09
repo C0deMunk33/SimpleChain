@@ -1,30 +1,27 @@
-var jayson = require('jayson');
- 
+const jayson = require('jayson');
+
 // create a client
-var client = jayson.client.http({
-	port: 2702
+const client = jayson.client.http({
+  port: 2702,
 });
 
 
+function DoAudit() {
+  // TODO: get current block number
+  const blockHeight = 9001;
 
-function DoAudit(){
-	//TODO: get current block number
-	var blockHeight = 9001;
-	
-	var blockToAudit = Math.floor(Math.random() * blockHeight);  
-	
-	client.GetBlock(blockToAudit)
-	.then((block) => {
-		/*
-		block{
-			contents://array of tracked states
-		}
-		*/
-		//hash block.contents
-		var blockHash;
-		
-		
-	});
-	
-	
+  const blockToAudit = Math.floor(Math.random() * blockHeight);
+
+  client.GetBlock(blockToAudit)
+    .then((block) => {
+      /*
+    block{
+      contents:,//array of tracked states,
+      blockHash:,//what the user should get
+      proofChain,//
+    }
+    */
+      // hash block.contents
+      const blockHash = block.contents;
+    });
 }
