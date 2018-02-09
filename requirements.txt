@@ -1,8 +1,0 @@
-requirements:
-web3 1.0.0-beta.18 (https://github.com/ethereum/web3.js/releases)
-jayson
-msgpack-lite
-shelljs
-
-optional:
-IPFS
