@@ -1,4 +1,5 @@
-var jayson = require('jayson');
+import jayson from 'jayson';
+
 var client = jayson.client.http('http://localhost:2702');
 
 
@@ -15,8 +16,8 @@ client.request('CreateNewTrackedState', [JSON.stringify(newObjectToTrack), key],
 			console.log(err);
 			throw err;
 		}
-		//console.log(response.result); 
-		
+		//console.log(response.result);
+
 		var NewTrackedState = response.result;
 		console.log("new state");
 		console.log(NewTrackedState);
