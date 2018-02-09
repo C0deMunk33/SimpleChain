@@ -13,7 +13,7 @@ function DoAudit() {
   const blockToAudit = Math.floor(Math.random() * blockHeight);
 
   client.GetBlock(blockToAudit)
-    .then((block) => {
+    .then((blockResult) => {
       /*
     block{
       contents:,//array of tracked states,
@@ -22,6 +22,6 @@ function DoAudit() {
     }
     */
       // hash block.contents
-      const blockHash = block.contents;
+      const blockHash = blockResult.block;
     });
 }

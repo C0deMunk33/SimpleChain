@@ -42,7 +42,9 @@ const SimpleChainRPCServer = jayson.server({
   },
 
   GetBlock: (args, callback) => {
-    const block = localBlockchain.GetBlock(args[0]);
+    let result = {};
+    result.block = localBlockchain.GetBlock(args[0]);
+    result.proof = [];
     callback(null, block);
   },
 
@@ -51,5 +53,4 @@ const SimpleChainRPCServer = jayson.server({
     callback(null, state);
   },
 });
-
 export default SimpleChainRPCServer;
